@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ex1">Example</div>
+    <div id="ex2" class="cex1">Example1</div>
+    <div id="ex3" class="cex1" >Example2</div>
+    <div id="ex4">Example3</div>
+    <script>
+    // get elementbyId
+    const ex1=document.getElementById("ex1")
+    ex1.textContent='happy'
+    // getElementByClassname
+    const ex=document.getElementsByClassName("cex1")
+    // ex.setAttribute('style', 'background-color: red');
+    for (const el of ex ) {
+        el.style.color='blue'
+    }
+        
+    // console.log(ex)
+    // getElementByTagname
+    const ex3=document.getElementsByTagName('div')
+    for (const el of ex3 ) {
+        el.style.fontSize='30px'
+    }
+    console.log(ex3)
+    // QuearySelector
+    const ex4 = document.querySelectorAll('div')
+    for (const el of ex4 ) {
+        el.style.color='red'
+    }
+    console.log(ex4)
+
+    </script>
+</body>
+</html>
